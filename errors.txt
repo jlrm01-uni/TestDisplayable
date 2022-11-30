@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 7: expected '=' not found.
+    image big_text ParameterizedText(style="dramatic_text")
+                                    ^
+
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Mon Oct  3 12:23:42 2022

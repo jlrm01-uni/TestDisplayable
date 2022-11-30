@@ -1,0 +1,36 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 9, in script
+    show text dramatic_text "This is dramatic" at truecenter
+SyntaxError: invalid syntax (<none>, line 1)
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 9, in script
+    show text dramatic_text "This is dramatic" at truecenter
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\ast.py", line 1408, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\ast.py", line 1371, in show_imspec
+    renpy.config.show(name,
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\exports.py", line 686, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\display\image.py", line 413, in find_target
+    self.target = target._duplicate(a)
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\text\extras.py", line 259, in _duplicate
+    string = renpy.python.py_eval(param)
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\python.py", line 1081, in py_eval
+    code = py_compile(code, 'eval')
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\python.py", line 1018, in py_compile
+    raise e
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\python.py", line 970, in py_compile
+    raise orig_e
+  File "M:\Renpy\renpy-8.0.2-sdk\renpy\python.py", line 963, in py_compile
+    tree = compile(source, filename, py_mode, ast.PyCF_ONLY_AST | flags, 1)
+SyntaxError: invalid syntax (<none>, line 1)
+
+Windows-10-10.0.22621 AMD64
+Ren'Py 8.0.2.22081402
+TestDisplayable 1.0
+Mon Oct  3 12:17:19 2022
